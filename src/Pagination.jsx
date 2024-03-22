@@ -6,7 +6,7 @@ export default function Pagination({startproductnumber,endproductnumber,totalres
       <div className="mt-2 flex flex-wrap items-center justify-between">
         <div>
           <p>
-            showing <strong>{startproductnumber}</strong> to <strong>{endproductnumber<=totalresult? endproductnumber:totalresult}</strong> of <strong>{totalresult}</strong> results
+            showing <strong>{totalresult>0? startproductnumber:0}</strong> to <strong>{endproductnumber<=totalresult? endproductnumber:totalresult}</strong> of <strong>{totalresult}</strong> results
           </p>
         </div>
         <div className="space-x-2">
